@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serum-Ascites Albumin Gradient Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="serumascitesalbumingradientRadio" name="variables" checked>
+  <label for="serumascitesalbumingradientRadio">Serum-ascites albumin gradient</label>
+
+  <input type="radio" id="serumalbuminconcentrationRadio" name="variables">
+  <label for="serumalbuminconcentrationRadio">Serum albumin concentration</label>
+
+  <input type="radio" id="asciticfluidalbuminconcentrationRadio" name="variables">
+  <label for="asciticfluidalbuminconcentrationRadio">Ascitic fluid albumin concentration</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Serum albumin concentration</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Ascitic fluid albumin concentration</label>
+  <input type="number" id="v2"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
